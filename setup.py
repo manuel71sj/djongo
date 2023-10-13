@@ -60,13 +60,13 @@ Important links
 ---------------
 
 * `Full Documentation <https://www.djongomapper.com/>`_
-* `Source code <https://github.com/doableware/djongo>`_
+* `Source code <https://github.com/manuel71sj/djongo>`_
 """
 
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 packages = find_packages()
-
+print(packages)
 
 def read(*parts):
     with codecs.open(os.path.join(BASE_DIR, *parts), 'r') as fp:
@@ -92,7 +92,7 @@ if sys.version_info.major == 3 and sys.version_info.minor < 7:
     install_requires.append("dataclasses")
 
 setup(
-    name='djongo_legal',
+    name='djongo-legal',
     version=find_version("djongo_legal", "__init__.py"),
     include_package_data=True,
     packages=packages,
@@ -110,7 +110,7 @@ setup(
         ],
     ),
     long_description=LONG_DESCRIPTION,
-    python_requires='>=3.6',
+    python_requires='>=3.8',
     keywords='Django MongoDB driver connector',
     classifiers=[
         'Development Status :: 3 - Alpha',
