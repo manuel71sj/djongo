@@ -65,7 +65,7 @@ first_row:
     hidden: true
 
 djongonxt_row:
-  - image_path: /assets/images/home/djongo-Nxt-v1.png
+  - image_path: /assets/images/home/djongo_legal-Nxt-v1.png
     alt: "Djongo Next"
     title: "Djongo Next"
     excerpt: "The advanced modeling framework. Ships with extra features for professional usage."

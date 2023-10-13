@@ -50,7 +50,7 @@ docs:
   - title: "Side stuff"
     children:
     - title: "Djongo vs Others"
-      url: /djongo-comparison/
+      url: /djongo_legal-comparison/
     - title: "Djongo Design"
       url: /django-mongodb-connector-design-document/
 #      - title: "Roadmap"

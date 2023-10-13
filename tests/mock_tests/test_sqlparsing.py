@@ -197,7 +197,7 @@ t4c2 = '"table4"."col2"'
 t1 = '"table1"'
 where = 'SELECT "table1"."col1" FROM "table1" WHERE'
 
-logger = getLogger('djongo')
+logger = getLogger('djongo_legal')
 logger.setLevel(DEBUG)
 logger.addHandler(StreamHandler())
 
@@ -217,7 +217,7 @@ class MockTest(TestCase):
         cls.params: typing.Union[mock.MagicMock, list] = None
 
     def setUp(self):
-        patcher = patch('djongo.sql2mongo.query.print_warn')
+        patcher = patch('djongo_legal.sql2mongo.query.print_warn')
         self.addCleanup(patcher.stop)
         self.print_warn = patcher.start()
 
@@ -2355,7 +2355,7 @@ class TestDatabaseWrapper(TestCase):
         self.assertIs(params['port'], port)
         self.assertIs(params['host'], host)
 
-    @patch('djongo.database.MongoClient')
+    @patch('djongo_legal.database.MongoClient')
     def test_connection(self, mocked_mongoclient):
         settings_dict = MagicMock(dict)
         wrapper = DatabaseWrapper(settings_dict)

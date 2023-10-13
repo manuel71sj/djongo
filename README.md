@@ -22,7 +22,7 @@ pip install djongo
 ```python
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'djongo_legal',
         'NAME': 'your-db-name',
         'CLIENT': {
            'host': 'your-db-host',

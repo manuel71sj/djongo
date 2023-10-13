@@ -15,15 +15,15 @@ single django model!
 Usage
 -----
 
-1. Install djongo::
+1. Install djongo_legal::
 
-      pip install djongo
+      pip install djongo_legal
 
 2. Into settings.py file of your project, add::
 
       DATABASES = {
            'default': {
-               'ENGINE': 'djongo',
+               'ENGINE': 'djongo_legal',
                'NAME': 'your-db-name',
            }
        }
@@ -83,17 +83,17 @@ def find_version(*file_paths):
 
 
 install_requires = [
-    'sqlparse==0.4.2',
-    'pymongo>=3.6.0',
-    'django>=2.1',
+    'sqlparse==0.4.4',
+    'pymongo>=4.5.0',
+    'django>=4.2.6',
 ]
 
 if sys.version_info.major == 3 and sys.version_info.minor < 7:
     install_requires.append("dataclasses")
 
 setup(
-    name='djongo',
-    version=find_version("djongo", "__init__.py"),
+    name='djongo_legal',
+    version=find_version("djongo_legal", "__init__.py"),
     include_package_data=True,
     packages=packages,
     url='https://www.djongomapper.com/',

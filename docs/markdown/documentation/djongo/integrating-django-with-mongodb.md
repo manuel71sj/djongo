@@ -98,8 +98,8 @@ When migrating an existing Django app to MongoDB,  it is recommended to start a 
     ```python
       DATABASES = {
           'default': {
-              'ENGINE': 'djongo',
-              'NAME': 'myapp-djongo-db',
+              'ENGINE': 'djongo_legal',
+              'NAME': 'myapp-djongo_legal-db',
           }
       }
     ```

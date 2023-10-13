@@ -26,7 +26,7 @@ For a local installation start with:
       ```python
       DATABASES = {
           'default': {
-              'ENGINE': 'djongo',
+              'ENGINE': 'djongo_legal',
               'NAME': 'your-db-name',
           }
       }
@@ -120,7 +120,7 @@ All options except `ENGINE` and `ENFORCE_SCHEMA` are the same those listed in th
 ```python
     DATABASES = {
         'default': {
-            'ENGINE': 'djongo',
+            'ENGINE': 'djongo_legal',
             'NAME': 'your-db-name',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
@@ -134,7 +134,7 @@ All options except `ENGINE` and `ENFORCE_SCHEMA` are the same those listed in th
             'LOGGING': {
                 'version': 1,
                 'loggers': {
-                    'djongo': {
+                    'djongo_legal': {
                         'level': 'DEBUG',
                         'propagate': False,                        
                     }

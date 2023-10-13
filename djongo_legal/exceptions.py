@@ -38,7 +38,7 @@ class MigrationError(Exception):
 
 def print_warn(feature=None, message=None):
     if feature not in _printed_features:
-        message = ((message or f'This version of djongo does not support "{feature}" fully. ')
+        message = ((message or f'This version of djongo-legal does not support "{feature}" fully. ')
                    + f'Visit {djongo_access_url}')
         print(message)
         _printed_features.add(feature)

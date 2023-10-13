@@ -15,12 +15,12 @@ import sys
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'djongo_legal',
         'NAME': 'test1',
         'ENFORCE_SCHEMA': True,
     },
     'other': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'djongo_legal',
         'NAME': 'test2',
         'ENFORCE_SCHEMA': True
     }

@@ -1,5 +1,5 @@
 """
-The standard way of using djongo is to import models.py
+The standard way of using djongo_legal is to import models.py
 in place of Django's standard models module.
 
 Djongo Fields is where custom fields for working with
@@ -34,7 +34,7 @@ from django.utils.functional import cached_property
 from django.utils.html import format_html_join, format_html
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
-from djongo.exceptions import NotSupportedError, print_warn
+from djongo_legal.exceptions import NotSupportedError, print_warn
 
 django_major = int(version.get_version().split('.')[0])
 
@@ -133,7 +133,7 @@ class ModelField(MongoField):
             if field.db_index:
                 print_warn('Embedded field index')
                 raise NotSupportedError(
-                    f'This version of djongo does not support indexes on embedded fields'
+                    f'This version of djongo_legal does not support indexes on embedded fields'
                 )
 
     def _value_thru_fields(self,

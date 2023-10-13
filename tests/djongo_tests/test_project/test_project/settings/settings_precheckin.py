@@ -29,8 +29,8 @@ ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'djongo-test',
+        'ENGINE': 'djongo_legal',
+        'NAME': 'djongo_legal-test',
         'ENFORCE_SCHEMA': False
 
     },

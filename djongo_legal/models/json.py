@@ -10,7 +10,7 @@ except ImportError:
         def __init__(self, *args, **kwargs):
             warnings.warn(
                 '"jsoneditor" module not available, to enable json mode '
-                'please run: "pip install djongo[json]"', stacklevel=2)
+                'please run: "pip install djongo_legal[json]"', stacklevel=2)
             models.TextField.__init__(self, *args, **kwargs)
 
 

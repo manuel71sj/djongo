@@ -102,7 +102,7 @@ class DatabaseWrapper(BaseDatabaseWrapper):
         'iendswith': 'iLIKE %s',
     }
 
-    vendor = 'djongo'
+    vendor = 'djongo_legal'
     SchemaEditorClass = DatabaseSchemaEditor
     Database = Database
 

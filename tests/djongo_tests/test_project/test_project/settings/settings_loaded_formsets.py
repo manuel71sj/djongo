@@ -29,11 +29,11 @@ ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'djongo-test',
+        'ENGINE': 'djongo_legal',
+        'NAME': 'djongo_legal-test',
         # 'USER': 'user',
         # 'PASSWORD': 'passpass',
-        # 'AUTH_SOURCE': 'djongo-test',
+        # 'AUTH_SOURCE': 'djongo_legal-test',
         'ENFORCE_SCHEMA': True
 
     },
@@ -42,7 +42,7 @@ DATABASES = {
 
 INSTALLED_APPS = [
     'xtest_app.apps.XtestAppConfig',
-    'djongo.dynamic_formsets.apps.DynamicFormsetsConfig',
+    'djongo_legal.dynamic_formsets.apps.DynamicFormsetsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

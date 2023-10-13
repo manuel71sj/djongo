@@ -16,10 +16,10 @@ description              : "Djongo is a smarter approach to database querying. I
                             documents stored in MongoDB. Use other contrib modules such as Auth and Sessions without any changes."
 url                      : "https://www.djongomapper.com"
 baseurl                  : ""
-repository               : "nesdis/djongo"
+repository               : "nesdis/djongo_legal"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-logo                     : "/assets/images/djongo-symbol-small.png"
+logo                     : "/assets/images/djongo_legal-symbol-small.png"
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"

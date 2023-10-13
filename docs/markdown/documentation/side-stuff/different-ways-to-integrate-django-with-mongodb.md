@@ -1,6 +1,6 @@
 ---
 title: Djongo vs Others
-permalink: /djongo-comparison/
+permalink: /djongo_legal-comparison/
 description: This page describes how to integrate MongoDB with Django with focus on Djongo. It describes the Django ORM internal implementation that is not covered by the Django documentation.
 classes:
     - l-docs

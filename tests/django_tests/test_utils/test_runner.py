@@ -24,13 +24,13 @@ class TextTestResult(BaseTextTestResult):
         super().addSuccess(test)
         self.stream.writeln('## Ending Test ##')
         self.passed.append((test, ''))
-        logger = getLogger('djongo')
+        logger = getLogger('djongo_legal')
         logger.setLevel(INFO)
 
     def startTest(self, test):
         self.stream.writeln('## Starting Test ##')
         super().startTest(test)
-        logger = getLogger('djongo')
+        logger = getLogger('djongo_legal')
         logger.setLevel(INFO)
         if logger.hasHandlers():
             logger.removeHandler(self.handler)

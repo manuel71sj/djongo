@@ -28,13 +28,13 @@ ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'djongo-test',
+        'ENGINE': 'djongo_legal',
+        'NAME': 'djongo_legal-test',
         'ENFORCE_SCHEMA': False,
         'LOGGING': {
             'version': 1,
             'loggers': {
-                'djongo': {
+                'djongo_legal': {
                     'level': 'DEBUG',
                     'propagate': False,
                     'handlers': ['console']

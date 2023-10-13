@@ -27,7 +27,7 @@ def run_test_sqlparsing():
 
 def run_commands(path):
     with client:
-        client.drop_database('djongo-test')
+        client.drop_database('djongo_legal-test')
 
     manage_py = os.path.join(path, "manage.py")
     cmds = [

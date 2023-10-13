@@ -8,8 +8,8 @@ from . import query as query_module
 from ..exceptions import SQLDecodeError, NotSupportedError
 
 all_token_types = U['SQLConstIdentifier',
-                    'djongo.sql2mongo.functions.CountFunc',
-                    'djongo.sql2mongo.functions.SimpleFunc',
+                    'djongo_legal.sql2mongo.functions.CountFunc',
+                    'djongo_legal.sql2mongo.functions.SimpleFunc',
                     'SQLIdentifier',
                     'SQLComparison',
                     'SQLPlaceholder']
